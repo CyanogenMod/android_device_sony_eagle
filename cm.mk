@@ -12,8 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Resolution
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
+
 # Inherit from eagle device
 $(call inherit-product, device/sony/eagle/eagle.mk)
+
+# Inherit from common resources
+$(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit CM common stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
