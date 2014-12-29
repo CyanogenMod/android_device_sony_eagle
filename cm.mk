@@ -18,14 +18,14 @@ TARGET_KERNEL_SOURCE := kernel/sony
 TARGET_KERNEL_CONFIG := aosp_yukon_eagle_lte_defconfig
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D2203,eagle
+TARGET_OTA_ASSERT_DEVICE := D2303,eagle
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/eagle/rootdir/fstab.yukon
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
 BOARD_RECOVERY_SWIPE := true
 
-# Inherit from flamingo device
+# Inherit from eagle device
 $(call inherit-product, device/sony/eagle/aosp_d2303.mk)
 
 # Inherit CM common stuff.
@@ -36,5 +36,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=Sony/D2303/D2303:4.4.2/18.3.C.0.37/2n9_bg:user/release-keys \
     PRIVATE_BUILD_DESC="D2303-user 4.4.2 18.3.C.0.37 2n9_bg release-keys"
 
-PRODUCT_NAME := cm_flamingo
-PRODUCT_DEVICE := flamingo
+PRODUCT_NAME := cm_eagle
+PRODUCT_DEVICE := eagle
