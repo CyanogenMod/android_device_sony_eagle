@@ -17,9 +17,8 @@ include device/sony/msm8226-common/BoardConfig.mk
 TARGET_BOOTLOADER_BOARD_NAME := D2303
 
 # Kernel properties
-BUILD_KERNEL_WITH_ROM := true
-TARGET_KERNEL_SOURCE := kernel/sony
-TARGET_KERNEL_CONFIG := aosp_yukon_eagle_lte_defconfig
+TARGET_KERNEL_CONFIG := cm_yukon_eagle_lte_defconfig
+TARGET_DTB_EXTRA_FLAGS := --force-v2
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D2303,eagle
