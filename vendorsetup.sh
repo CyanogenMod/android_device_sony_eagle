@@ -14,5 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_d2303-userdebug
 add_lunch_combo cm_eagle-userdebug
