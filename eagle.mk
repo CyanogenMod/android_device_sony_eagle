@@ -13,7 +13,6 @@
 # limitations under the License.
 
 # Include others
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, device/sony/msm8226-common/device.mk)
 $(call inherit-product, vendor/sony/eagle/eagle-vendor.mk)
@@ -27,14 +26,6 @@ PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/system/etc/sec_config:system/etc/sec_config \
     device/sony/eagle/rootdir/fstab.yukon:root/fstab.yukon \
     device/sony/eagle/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
-
-# Product attributes
-PRODUCT_NAME := aosp_d2303
-PRODUCT_DEVICE := eagle
-PRODUCT_MODEL := Xperia M2 (AOSP)
-PRODUCT_BRAND := Sony
-PRODUCT_MANUFACTURER := Sony
-PRODUCT_LOCALES += xhdpi hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
