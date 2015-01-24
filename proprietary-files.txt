@@ -1,4 +1,5 @@
 bin/btnvtool
+bin/fm_qsoc_patches
 bin/hci_qcomm_init
 etc/firmware/cmnlib.b00
 etc/firmware/cmnlib.b01
