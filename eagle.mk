@@ -19,6 +19,9 @@ $(call inherit-product, vendor/sony/eagle/eagle-vendor.mk)
 $(call inherit-product, vendor/sony/msm8226-common/msm8226-common-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/eagle/overlay
+
 PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/logo.rle:root/logo.rle \
     device/sony/eagle/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
