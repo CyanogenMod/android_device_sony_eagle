@@ -13,17 +13,16 @@
 # limitations under the License.
 
 # Include others
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, device/sony/msm8226-common/device.mk)
 $(call inherit-product, vendor/sony/eagle/eagle-vendor.mk)
-$(call inherit-product, vendor/sony/msm8226-common/msm8226-common-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/eagle/overlay
 
 PRODUCT_COPY_FILES += \
-    device/sony/eagle/rootdir/logo.rle:root/logo.rle \
     device/sony/eagle/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/eagle/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/eagle/rootdir/system/etc/sap.conf:system/etc/sap.conf \
@@ -31,6 +30,16 @@ PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/eagle/rootdir/fstab.yukon:root/fstab.yukon \
     device/sony/eagle/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
+
+# Product attributes
+PRODUCT_NAME := aosp_d2303
+PRODUCT_DEVICE := eagle
+PRODUCT_MODEL := Xperia M2 (AOSP)
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
+
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
