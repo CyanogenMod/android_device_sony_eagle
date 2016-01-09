@@ -1,0 +1,9 @@
+#!/sbin/busybox sh
+
+export BOOTREC_EVENT_NODE="/dev/input/event1 c 13 65"
+export BOOTREC_EVENT="/dev/input/event1"
+export BOOTREC_LED_RED="/sys/class/leds/led:rgb_red/brightness"
+export BOOTREC_LED_GREEN="/sys/class/leds/led:rgb_green/brightness"
+export BOOTREC_LED_BLUE="/sys/class/leds/led:rgb_blue/brightness"
+export BOOTREC_FOTA_NODE="/dev/block/mmcblk0p22 b 179 22"
+export BOOTREC_FOTA="/dev/block/mmcblk0p22"
