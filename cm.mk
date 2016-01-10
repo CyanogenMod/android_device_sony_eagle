@@ -17,7 +17,7 @@ TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D2303,eagle
+TARGET_OTA_ASSERT_DEVICE := D2302,D2303,D2305,D2306,D2403,eagle
 
 # Inherit from eagle device
 $(call inherit-product, device/sony/eagle/aosp_d2303.mk)
