@@ -14,6 +14,8 @@
 
 include device/sony/yukon/BoardConfig.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/sony/eagle/include
+
 TARGET_RECOVERY_FSTAB = device/sony/eagle/rootdir/fstab.yukon
 
 TARGET_BOOTLOADER_BOARD_NAME := D2303
