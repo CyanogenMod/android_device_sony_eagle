@@ -28,10 +28,6 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit CM common stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Recovey
-PRODUCT_COPY_FILES += \
-    device/sony/eagle/bootrec-device:root/sbin/bootrec-device
-
 # FingerPrint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=D2303 \

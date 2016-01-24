@@ -1,4 +1,0 @@
-#!/sbin/busybox sh
-
-export BOOTREC_FOTA_NODE="/dev/block/mmcblk0p22 b 179 22"
-export BOOTREC_FOTA="/dev/block/mmcblk0p22"
